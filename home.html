@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My First Website</title>
+  <style>
+    :root {
+      --primary-color: #4a6b57;
+      --secondary-color: #88a095;
+      --light-color: #f5f9f7;
+      --dark-color: #2d4035;
+      --text-color: #333333;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: var(--light-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .info-box {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(255,255,255,0.9);
+      padding: 15px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-size: 14px;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+    }
+
+    .main-content {
+      max-width: 800px;
+      margin: 100px auto 50px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--dark-color);
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .bismillah {
+      font-size: 22px;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+      font-family: 'Traditional Arabic', Arial, sans-serif;
+    }
+
+    .journey-title {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      margin: 25px 0;
+      font-style: italic;
+    }
+
+    .nav-links {
+      margin: 30px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: var(--primary-color);
+      color: white;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--dark-color);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .welcome-message {
+      background-color: rgba(255,255,255,0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      margin: 30px 0;
+      border: 1px solid #e8e8e8;
+    }
+
+    @media (max-width: 768px) {
+      .info-box {
+        position: static;
+        margin: 20px auto;
+        width: 90%;
+      }
+      
+      .main-content {
+        margin-top: 30px;
+      }
+      
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info-box">
+    <strong>Doctor:</strong> Manal<br>
+    <strong>Name:</strong> Mohamed Ismail Fadl<br>
+    <strong>Section:</strong> 13<br>
+    <strong>Number:</strong> 12<br>
+  </div>
+
+  <div class="main-content">
+    <div class="bismillah">بسم الله الرحمن الرحيم</div>
+    
+    <div class="welcome-message">
+      <h1>Welcome to My First Website</h1>
+      <div class="journey-title">رحلة البحث عن بونص 5</div>
+      <p>This page represents the beginning of my journey in learning web development and design</p>
+    </div>
+    
+    <div class="nav-links">
+      <a href="login.html">Login</a>
+      <a href="journey.html">Programming Journey</a>
+    </div>
+  </div>
+
+</body>
+</html>
